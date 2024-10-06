@@ -1,7 +1,7 @@
 altair==5.4.1
 anaconda-client==1.11.0
 anaconda-navigator==2.4.0
-anyio @ file:///opt/concourse/worker/volumes/live/485b0f52-1188-482a-6285-65a36c8fa8a6/volume/anyio_1644481714856/work/dist
+anyio==3.6.2
 appdirs==1.4.4
 appnope @ file:///opt/concourse/worker/volumes/live/6ca6f098-d773-4461-5c91-a24a17435bda/volume/appnope_1606859448531/work
 argon2-cffi @ file:///opt/conda/conda-bld/argon2-cffi_1645000214183/work
