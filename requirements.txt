@@ -1,5 +1,5 @@
-streamlit==1.20.0
-pandas==2.0.3
+streamlit>=1.20.0
+pandas>=1.5.3, <2.0
 anyio==3.6.2
 numpy==1.23.4
 plotly.express==0.4.1
