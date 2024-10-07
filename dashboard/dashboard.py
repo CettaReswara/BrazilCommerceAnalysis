@@ -127,18 +127,21 @@ if page == "Product Analysis":
         under_average_category = pd.read_csv(data_path+"under_average_category.csv")
         under_average_category['order_purchase_timestamp'] = pd.to_datetime(under_average_category['order_purchase_timestamp'])
 
-        top6_list = under_average_category['product_category_name'].unique()
+        top6_list_raw = under_average_category['product_category_name'].unique()
+        top6_list = ['All Categories']
+        for i in range(6):
+            top6_list.append(top6_list_raw[i])
 
         col1.markdown("<h1 style='font-size: 20px; font-weight: 3xl;'>Top 6 Potential Category</h1>", unsafe_allow_html=True)
         col1.write("")            
         graph = col1.radio(
             " ",
             top6_list,
-            index=None,
+            index=0,
         )
 
         # Column 2
-        if graph == None:
+        if graph == top6_list[0]:
             # Create a chart (for example, a bar chart)
             fig = px.bar(
                             cat_sales.sort_values(by='total sales'),
