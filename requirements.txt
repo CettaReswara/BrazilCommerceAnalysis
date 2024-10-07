@@ -1,9 +1,6 @@
+streamlit>=1.20.0
+pandas>=1.5.3, <2.0
 anyio==3.6.2
+numpy==1.23.4
 plotly.express==0.4.1
 datetime==5.5
-Babel==2.12.1
-matplotlib==3.8.0
-numpy==1.25.2
-pandas==2.1.4
-seaborn==0.13.0
-streamlit==1.30.0
